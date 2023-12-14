@@ -20,7 +20,7 @@ def products_list(request):
 
 
 def orders_list(request):
-    orders = Order.objects.all()
+    orders = Order.objects.all().prefetch_related('products').select_related('user_id')
     context = {
         'title': 'Заказы',
         'orders': orders,
