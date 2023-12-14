@@ -16,14 +16,14 @@
     - - [x] PositiveSmallIntegerField;
     - - [x] DateTimeField;
     - - [x] BooleanField.
-5. - [ ] Модель Order с полями типов:
-    - - [ ] TextField;
-    - - [ ] CharField;
-    - - [ ] DateTimeField;
-    - - [ ] ForeignKey — связь с моделью User;
-    - - [ ] ManyToManyField — связь с моделью Product.
-6. - [ ] Выполнение стандартных миграций.
-7. - [ ] Отдельные миграции для каждой из моделей.
+5. - [x] Модель Order с полями типов:
+    - - [x] TextField;
+    - - [x] CharField;
+    - - [x] DateTimeField;
+    - - [x] ForeignKey — связь с моделью User;
+    - - [x] ManyToManyField — связь с моделью Product.
+6. - [x] Выполнение стандартных миграций.
+7. - [x] Отдельные миграции для каждой из моделей.
 8. - [ ] Пользователя через createsuperuser.
 9. - [ ] View функции:
     - - [ ] для shop index (список ссылок на доступные страницы);
