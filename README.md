@@ -8,14 +8,14 @@
 # Что нужно сделать
 1. - [x] Проект mysite.
 2. - [x] Приложение shopapp.
-3. - [ ] Приложение, установленное в настройках.
-4. - [ ] Модель Product с полями типов:
-    - - [ ] CharField;
-    - - [ ] TextField;
-    - - [ ] DecimalField;
-    - - [ ] PositiveSmallIntegerField;
-    - - [ ] DateTimeField;
-    - - [ ] BooleanField.
+3. - [x] Приложение, установленное в настройках.
+4. - [x] Модель Product с полями типов:
+    - - [x] CharField;
+    - - [x] TextField;
+    - - [x] DecimalField;
+    - - [x] PositiveSmallIntegerField;
+    - - [x] DateTimeField;
+    - - [x] BooleanField.
 5. - [ ] Модель Order с полями типов:
     - - [ ] TextField;
     - - [ ] CharField;
