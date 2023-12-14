@@ -23,6 +23,6 @@ def orders_list(request):
     orders = Order.objects.all()
     context = {
         'title': 'Заказы',
-        'products': orders,
+        'orders': orders,
     }
-    return render(request, 'shopapp/products.html', context=context)
+    return render(request, 'shopapp/orders.html', context=context)

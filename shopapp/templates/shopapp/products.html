@@ -1,0 +1,14 @@
+{% extends 'shopapp/base.html' %}
+{% block content %}
+<h1>Товары</h1>
+{% for prod in products %}
+<h3>{{ prod.name }}</h3>
+<p>{{ prod.description|linebreaks }}</p>
+<p>Цена: {{ prod.price }}</p>
+<p>Количество: {{ prod.quantity }}</p>
+{% if prod.available %}
+<p>Доступно для заказа</p>
+<p>Дата изменения: {{ prod.updated }}</p>
+{% endif %}
+{% endfor %}
+{% endblock %}

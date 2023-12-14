@@ -12,8 +12,8 @@ class Product(models.Model):
 
 
 class Order(models.Model):
-    comment_to_order = models.TextField(verbose_name='Комментарии к заказу')
+    comment_to_order = models.TextField(verbose_name='Комментарии к заказу', null=True, blank=True)
     addres_to = models.CharField(max_length=200, verbose_name='Адрес доставки')
     create = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
     user_id = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Заказчик')
-    priducts = models.ManyToManyField(Product, verbose_name='Заказанные товары')
+    products = models.ManyToManyField(Product, verbose_name='Заказанные товары')
