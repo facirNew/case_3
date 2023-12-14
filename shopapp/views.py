@@ -1,3 +1,28 @@
 from django.shortcuts import render
+from .models import *
 
-# Create your views here.
+
+def shop_index(request):
+    context = {
+        'title': 'Главная страница',
+    }
+    return render(request, 'shopapp/index.html', context)
+
+
+def products_list(request):
+    products = Product.objects.all()
+    context = {
+        'title': 'Товары',
+        'products': products,
+    }
+
+    return render(request, 'shopapp/products.html', context=context)
+
+
+def orders_list(request):
+    orders = Order.objects.all()
+    context = {
+        'title': 'Заказы',
+        'products': orders,
+    }
+    return render(request, 'shopapp/products.html', context=context)
